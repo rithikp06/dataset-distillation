@@ -8,8 +8,8 @@ __pycache__
 */**/**/**/**/*.pyc
 .mypy_cache
 
-results
-results/
+
+
 data
 data/
 models

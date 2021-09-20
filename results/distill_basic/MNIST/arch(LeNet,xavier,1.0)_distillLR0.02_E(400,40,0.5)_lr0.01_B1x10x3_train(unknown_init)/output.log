@@ -1,0 +1,317 @@
+2021-09-19 17:31:57 [INFO ]  ======================================== 2021-09-19 17:31:57 ========================================
+2021-09-19 17:31:57 [INFO ]  Base directory is ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)
+2021-09-19 17:31:57 [INFO ]  Options: 
+2021-09-19 17:31:57 [INFO ]  	arch: LeNet
+2021-09-19 17:31:57 [INFO ]  	attack_class: 0
+2021-09-19 17:31:57 [INFO ]  	base_seed: 1
+2021-09-19 17:31:57 [INFO ]  	batch_size: 1024
+2021-09-19 17:31:57 [INFO ]  	checkpoint_interval: 10
+2021-09-19 17:31:57 [INFO ]  	dataset: MNIST
+2021-09-19 17:31:57 [INFO ]  	dataset_labels:
+2021-09-19 17:31:57 [INFO ]  	- 0
+2021-09-19 17:31:57 [INFO ]  	- 1
+2021-09-19 17:31:57 [INFO ]  	- 2
+2021-09-19 17:31:57 [INFO ]  	- 3
+2021-09-19 17:31:57 [INFO ]  	- 4
+2021-09-19 17:31:57 [INFO ]  	- 5
+2021-09-19 17:31:57 [INFO ]  	- 6
+2021-09-19 17:31:57 [INFO ]  	- 7
+2021-09-19 17:31:57 [INFO ]  	- 8
+2021-09-19 17:31:57 [INFO ]  	- 9
+2021-09-19 17:31:57 [INFO ]  	dataset_normalization: !!python/tuple
+2021-09-19 17:31:57 [INFO ]  	- !!python/tuple
+2021-09-19 17:31:57 [INFO ]  	    - 0.1307
+2021-09-19 17:31:57 [INFO ]  	- !!python/tuple
+2021-09-19 17:31:57 [INFO ]  	    - 0.3081
+2021-09-19 17:31:57 [INFO ]  	dataset_root: ./data/mnist
+2021-09-19 17:31:57 [INFO ]  	decay_epochs: 40
+2021-09-19 17:31:57 [INFO ]  	decay_factor: 0.5
+2021-09-19 17:31:57 [INFO ]  	device_id: 0
+2021-09-19 17:31:57 [INFO ]  	distill_epochs: 3
+2021-09-19 17:31:57 [INFO ]  	distill_lr: 0.02
+2021-09-19 17:31:57 [INFO ]  	distill_steps: 10
+2021-09-19 17:31:57 [INFO ]  	distilled_images_per_class_per_step: 1
+2021-09-19 17:31:57 [INFO ]  	distributed: false
+2021-09-19 17:31:57 [INFO ]  	dropout: false
+2021-09-19 17:31:57 [INFO ]  	epochs: 400
+2021-09-19 17:31:57 [INFO ]  	expr_name_format: null
+2021-09-19 17:31:57 [INFO ]  	image_dpi: 80
+2021-09-19 17:31:57 [INFO ]  	init: xavier
+2021-09-19 17:31:57 [INFO ]  	init_param: 1.0
+2021-09-19 17:31:57 [INFO ]  	input_size: 28
+2021-09-19 17:31:57 [INFO ]  	log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+2021-09-19 17:31:57 [INFO ]  	log_interval: 100
+2021-09-19 17:31:57 [INFO ]  	log_level: INFO
+2021-09-19 17:31:57 [INFO ]  	lr: 0.01
+2021-09-19 17:31:57 [INFO ]  	mode: distill_basic
+2021-09-19 17:31:57 [INFO ]  	model_dir: ./models/
+2021-09-19 17:31:57 [INFO ]  	model_subdir_format: null
+2021-09-19 17:31:57 [INFO ]  	n_nets: 1
+2021-09-19 17:31:57 [INFO ]  	nc: 1
+2021-09-19 17:31:57 [INFO ]  	no_log: false
+2021-09-19 17:31:57 [INFO ]  	num_classes: 10
+2021-09-19 17:31:57 [INFO ]  	num_workers: 8
+2021-09-19 17:31:57 [INFO ]  	phase: train
+2021-09-19 17:31:57 [INFO ]  	results_dir: ./results/
+2021-09-19 17:31:57 [INFO ]  	sample_n_nets: 1
+2021-09-19 17:31:57 [INFO ]  	source_dataset: null
+2021-09-19 17:31:57 [INFO ]  	start_time: '2021-09-19 17:31:57'
+2021-09-19 17:31:57 [INFO ]  	target_class: 1
+2021-09-19 17:31:57 [INFO ]  	test_batch_size: 1024
+2021-09-19 17:31:57 [INFO ]  	test_distill_epochs: null
+2021-09-19 17:31:57 [INFO ]  	test_distilled_images: loaded
+2021-09-19 17:31:57 [INFO ]  	test_distilled_lrs:
+2021-09-19 17:31:57 [INFO ]  	- loaded
+2021-09-19 17:31:57 [INFO ]  	test_n_nets: 1
+2021-09-19 17:31:57 [INFO ]  	test_n_runs: 1
+2021-09-19 17:31:57 [INFO ]  	test_name_format: null
+2021-09-19 17:31:57 [INFO ]  	test_nets_type: unknown_init
+2021-09-19 17:31:57 [INFO ]  	test_niter: 1
+2021-09-19 17:31:57 [INFO ]  	test_optimize_n_nets: 20
+2021-09-19 17:31:57 [INFO ]  	test_optimize_n_runs: null
+2021-09-19 17:31:57 [INFO ]  	train_nets_type: unknown_init
+2021-09-19 17:31:57 [INFO ]  	world_rank: 0
+2021-09-19 17:31:57 [INFO ]  	world_size: 1
+2021-09-19 17:31:57 [INFO ]  	
+2021-09-19 17:31:58 [INFO ]  train dataset size:	60000
+2021-09-19 17:31:58 [INFO ]  test dataset size: 	10000
+2021-09-19 17:31:58 [INFO ]  datasets built!
+2021-09-19 17:31:58 [INFO ]  mode: distill_basic, phase: train
+2021-09-19 17:31:58 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-19 17:32:02 [ERROR]  Fatal error: 
+2021-09-19 17:32:02 [ERROR]  Traceback (most recent call last):
+2021-09-19 17:32:02 [ERROR]    File "main.py", line 402, in <module>
+2021-09-19 17:32:02 [ERROR]      main(options.get_state())
+2021-09-19 17:32:02 [ERROR]    File "main.py", line 108, in main
+2021-09-19 17:32:02 [ERROR]      state.models = load_train_models()
+2021-09-19 17:32:02 [ERROR]    File "main.py", line 88, in load_train_models
+2021-09-19 17:32:02 [ERROR]      model, = networks.get_networks(state, N=1)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/dataset-distillation/networks/__init__.py", line 18, in get_networks
+2021-09-19 17:32:02 [ERROR]      net = cls(state)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 99, in __call__
+2021-09-19 17:32:02 [ERROR]      net = net.to(state.device)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 852, in to
+2021-09-19 17:32:02 [ERROR]      return self._apply(convert)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 125, in _apply
+2021-09-19 17:32:02 [ERROR]      rv = super(ReparamModule, self)._apply(*args, **kwargs)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 530, in _apply
+2021-09-19 17:32:02 [ERROR]      module._apply(fn)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 552, in _apply
+2021-09-19 17:32:02 [ERROR]      param_applied = fn(param)
+2021-09-19 17:32:02 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 850, in convert
+2021-09-19 17:32:02 [ERROR]      return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+2021-09-19 17:32:02 [ERROR]  RuntimeError: CUDA error: out of memory
+2021-09-19 17:32:02 [ERROR]  CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+2021-09-19 17:32:02 [ERROR]  For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+2021-09-19 17:34:39 [INFO ]  ======================================== 2021-09-19 17:34:39 ========================================
+2021-09-19 17:34:39 [INFO ]  Base directory is ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)
+2021-09-19 17:34:39 [INFO ]  Options: 
+2021-09-19 17:34:39 [INFO ]  	arch: LeNet
+2021-09-19 17:34:39 [INFO ]  	attack_class: 0
+2021-09-19 17:34:39 [INFO ]  	base_seed: 1
+2021-09-19 17:34:39 [INFO ]  	batch_size: 1024
+2021-09-19 17:34:39 [INFO ]  	checkpoint_interval: 10
+2021-09-19 17:34:39 [INFO ]  	dataset: MNIST
+2021-09-19 17:34:39 [INFO ]  	dataset_labels:
+2021-09-19 17:34:39 [INFO ]  	- 0
+2021-09-19 17:34:39 [INFO ]  	- 1
+2021-09-19 17:34:39 [INFO ]  	- 2
+2021-09-19 17:34:39 [INFO ]  	- 3
+2021-09-19 17:34:39 [INFO ]  	- 4
+2021-09-19 17:34:39 [INFO ]  	- 5
+2021-09-19 17:34:39 [INFO ]  	- 6
+2021-09-19 17:34:39 [INFO ]  	- 7
+2021-09-19 17:34:39 [INFO ]  	- 8
+2021-09-19 17:34:39 [INFO ]  	- 9
+2021-09-19 17:34:39 [INFO ]  	dataset_normalization: !!python/tuple
+2021-09-19 17:34:39 [INFO ]  	- !!python/tuple
+2021-09-19 17:34:39 [INFO ]  	    - 0.1307
+2021-09-19 17:34:39 [INFO ]  	- !!python/tuple
+2021-09-19 17:34:39 [INFO ]  	    - 0.3081
+2021-09-19 17:34:39 [INFO ]  	dataset_root: ./data/mnist
+2021-09-19 17:34:39 [INFO ]  	decay_epochs: 40
+2021-09-19 17:34:39 [INFO ]  	decay_factor: 0.5
+2021-09-19 17:34:39 [INFO ]  	device_id: 0
+2021-09-19 17:34:39 [INFO ]  	distill_epochs: 3
+2021-09-19 17:34:39 [INFO ]  	distill_lr: 0.02
+2021-09-19 17:34:39 [INFO ]  	distill_steps: 10
+2021-09-19 17:34:39 [INFO ]  	distilled_images_per_class_per_step: 1
+2021-09-19 17:34:39 [INFO ]  	distributed: false
+2021-09-19 17:34:39 [INFO ]  	dropout: false
+2021-09-19 17:34:39 [INFO ]  	epochs: 400
+2021-09-19 17:34:39 [INFO ]  	expr_name_format: null
+2021-09-19 17:34:39 [INFO ]  	image_dpi: 80
+2021-09-19 17:34:39 [INFO ]  	init: xavier
+2021-09-19 17:34:39 [INFO ]  	init_param: 1.0
+2021-09-19 17:34:39 [INFO ]  	input_size: 28
+2021-09-19 17:34:39 [INFO ]  	log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+2021-09-19 17:34:39 [INFO ]  	log_interval: 100
+2021-09-19 17:34:39 [INFO ]  	log_level: INFO
+2021-09-19 17:34:39 [INFO ]  	lr: 0.01
+2021-09-19 17:34:39 [INFO ]  	mode: distill_basic
+2021-09-19 17:34:39 [INFO ]  	model_dir: ./models/
+2021-09-19 17:34:39 [INFO ]  	model_subdir_format: null
+2021-09-19 17:34:39 [INFO ]  	n_nets: 1
+2021-09-19 17:34:39 [INFO ]  	nc: 1
+2021-09-19 17:34:39 [INFO ]  	no_log: false
+2021-09-19 17:34:39 [INFO ]  	num_classes: 10
+2021-09-19 17:34:39 [INFO ]  	num_workers: 8
+2021-09-19 17:34:39 [INFO ]  	phase: train
+2021-09-19 17:34:39 [INFO ]  	results_dir: ./results/
+2021-09-19 17:34:39 [INFO ]  	sample_n_nets: 1
+2021-09-19 17:34:39 [INFO ]  	source_dataset: null
+2021-09-19 17:34:39 [INFO ]  	start_time: '2021-09-19 17:34:39'
+2021-09-19 17:34:39 [INFO ]  	target_class: 1
+2021-09-19 17:34:39 [INFO ]  	test_batch_size: 1024
+2021-09-19 17:34:39 [INFO ]  	test_distill_epochs: null
+2021-09-19 17:34:39 [INFO ]  	test_distilled_images: loaded
+2021-09-19 17:34:39 [INFO ]  	test_distilled_lrs:
+2021-09-19 17:34:39 [INFO ]  	- loaded
+2021-09-19 17:34:39 [INFO ]  	test_n_nets: 1
+2021-09-19 17:34:39 [INFO ]  	test_n_runs: 1
+2021-09-19 17:34:39 [INFO ]  	test_name_format: null
+2021-09-19 17:34:39 [INFO ]  	test_nets_type: unknown_init
+2021-09-19 17:34:39 [INFO ]  	test_niter: 1
+2021-09-19 17:34:39 [INFO ]  	test_optimize_n_nets: 20
+2021-09-19 17:34:39 [INFO ]  	test_optimize_n_runs: null
+2021-09-19 17:34:39 [INFO ]  	train_nets_type: unknown_init
+2021-09-19 17:34:39 [INFO ]  	world_rank: 0
+2021-09-19 17:34:39 [INFO ]  	world_size: 1
+2021-09-19 17:34:39 [INFO ]  	
+2021-09-19 17:34:39 [WARNING]  ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/opt.yaml already exists, moved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/old_opts/opt_2021_09_19__17_31_57.yaml
+2021-09-19 17:34:39 [INFO ]  train dataset size:	60000
+2021-09-19 17:34:39 [INFO ]  test dataset size: 	10000
+2021-09-19 17:34:39 [INFO ]  datasets built!
+2021-09-19 17:34:39 [INFO ]  mode: distill_basic, phase: train
+2021-09-19 17:34:39 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-19 17:34:44 [ERROR]  Fatal error: 
+2021-09-19 17:34:44 [ERROR]  Traceback (most recent call last):
+2021-09-19 17:34:44 [ERROR]    File "main.py", line 402, in <module>
+2021-09-19 17:34:44 [ERROR]      main(options.get_state())
+2021-09-19 17:34:44 [ERROR]    File "main.py", line 108, in main
+2021-09-19 17:34:44 [ERROR]      state.models = load_train_models()
+2021-09-19 17:34:44 [ERROR]    File "main.py", line 88, in load_train_models
+2021-09-19 17:34:44 [ERROR]      model, = networks.get_networks(state, N=1)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/dataset-distillation/networks/__init__.py", line 18, in get_networks
+2021-09-19 17:34:44 [ERROR]      net = cls(state)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 99, in __call__
+2021-09-19 17:34:44 [ERROR]      net = net.to(state.device)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 852, in to
+2021-09-19 17:34:44 [ERROR]      return self._apply(convert)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 125, in _apply
+2021-09-19 17:34:44 [ERROR]      rv = super(ReparamModule, self)._apply(*args, **kwargs)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 530, in _apply
+2021-09-19 17:34:44 [ERROR]      module._apply(fn)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 552, in _apply
+2021-09-19 17:34:44 [ERROR]      param_applied = fn(param)
+2021-09-19 17:34:44 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 850, in convert
+2021-09-19 17:34:44 [ERROR]      return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+2021-09-19 17:34:44 [ERROR]  RuntimeError: CUDA error: out of memory
+2021-09-19 17:34:44 [ERROR]  CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+2021-09-19 17:34:44 [ERROR]  For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+2021-09-19 17:51:51 [INFO ]  ======================================== 2021-09-19 17:51:51 ========================================
+2021-09-19 17:51:51 [INFO ]  Base directory is ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)
+2021-09-19 17:51:51 [INFO ]  Options: 
+2021-09-19 17:51:51 [INFO ]  	arch: LeNet
+2021-09-19 17:51:51 [INFO ]  	attack_class: 0
+2021-09-19 17:51:51 [INFO ]  	base_seed: 1
+2021-09-19 17:51:51 [INFO ]  	batch_size: 1024
+2021-09-19 17:51:51 [INFO ]  	checkpoint_interval: 10
+2021-09-19 17:51:51 [INFO ]  	dataset: MNIST
+2021-09-19 17:51:51 [INFO ]  	dataset_labels:
+2021-09-19 17:51:51 [INFO ]  	- 0
+2021-09-19 17:51:51 [INFO ]  	- 1
+2021-09-19 17:51:51 [INFO ]  	- 2
+2021-09-19 17:51:51 [INFO ]  	- 3
+2021-09-19 17:51:51 [INFO ]  	- 4
+2021-09-19 17:51:51 [INFO ]  	- 5
+2021-09-19 17:51:51 [INFO ]  	- 6
+2021-09-19 17:51:51 [INFO ]  	- 7
+2021-09-19 17:51:51 [INFO ]  	- 8
+2021-09-19 17:51:51 [INFO ]  	- 9
+2021-09-19 17:51:51 [INFO ]  	dataset_normalization: !!python/tuple
+2021-09-19 17:51:51 [INFO ]  	- !!python/tuple
+2021-09-19 17:51:51 [INFO ]  	    - 0.1307
+2021-09-19 17:51:51 [INFO ]  	- !!python/tuple
+2021-09-19 17:51:51 [INFO ]  	    - 0.3081
+2021-09-19 17:51:51 [INFO ]  	dataset_root: ./data/mnist
+2021-09-19 17:51:51 [INFO ]  	decay_epochs: 40
+2021-09-19 17:51:51 [INFO ]  	decay_factor: 0.5
+2021-09-19 17:51:51 [INFO ]  	device_id: 0
+2021-09-19 17:51:51 [INFO ]  	distill_epochs: 3
+2021-09-19 17:51:51 [INFO ]  	distill_lr: 0.02
+2021-09-19 17:51:51 [INFO ]  	distill_steps: 10
+2021-09-19 17:51:51 [INFO ]  	distilled_images_per_class_per_step: 1
+2021-09-19 17:51:51 [INFO ]  	distributed: false
+2021-09-19 17:51:51 [INFO ]  	dropout: false
+2021-09-19 17:51:51 [INFO ]  	epochs: 400
+2021-09-19 17:51:51 [INFO ]  	expr_name_format: null
+2021-09-19 17:51:51 [INFO ]  	image_dpi: 80
+2021-09-19 17:51:51 [INFO ]  	init: xavier
+2021-09-19 17:51:51 [INFO ]  	init_param: 1.0
+2021-09-19 17:51:51 [INFO ]  	input_size: 28
+2021-09-19 17:51:51 [INFO ]  	log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+2021-09-19 17:51:51 [INFO ]  	log_interval: 100
+2021-09-19 17:51:51 [INFO ]  	log_level: INFO
+2021-09-19 17:51:51 [INFO ]  	lr: 0.01
+2021-09-19 17:51:51 [INFO ]  	mode: distill_basic
+2021-09-19 17:51:51 [INFO ]  	model_dir: ./models/
+2021-09-19 17:51:51 [INFO ]  	model_subdir_format: null
+2021-09-19 17:51:51 [INFO ]  	n_nets: 1
+2021-09-19 17:51:51 [INFO ]  	nc: 1
+2021-09-19 17:51:51 [INFO ]  	no_log: false
+2021-09-19 17:51:51 [INFO ]  	num_classes: 10
+2021-09-19 17:51:51 [INFO ]  	num_workers: 8
+2021-09-19 17:51:51 [INFO ]  	phase: train
+2021-09-19 17:51:51 [INFO ]  	results_dir: ./results/
+2021-09-19 17:51:51 [INFO ]  	sample_n_nets: 1
+2021-09-19 17:51:51 [INFO ]  	source_dataset: null
+2021-09-19 17:51:51 [INFO ]  	start_time: '2021-09-19 17:51:51'
+2021-09-19 17:51:51 [INFO ]  	target_class: 1
+2021-09-19 17:51:51 [INFO ]  	test_batch_size: 1024
+2021-09-19 17:51:51 [INFO ]  	test_distill_epochs: null
+2021-09-19 17:51:51 [INFO ]  	test_distilled_images: loaded
+2021-09-19 17:51:51 [INFO ]  	test_distilled_lrs:
+2021-09-19 17:51:51 [INFO ]  	- loaded
+2021-09-19 17:51:51 [INFO ]  	test_n_nets: 1
+2021-09-19 17:51:51 [INFO ]  	test_n_runs: 1
+2021-09-19 17:51:51 [INFO ]  	test_name_format: null
+2021-09-19 17:51:51 [INFO ]  	test_nets_type: unknown_init
+2021-09-19 17:51:51 [INFO ]  	test_niter: 1
+2021-09-19 17:51:51 [INFO ]  	test_optimize_n_nets: 20
+2021-09-19 17:51:51 [INFO ]  	test_optimize_n_runs: null
+2021-09-19 17:51:51 [INFO ]  	train_nets_type: unknown_init
+2021-09-19 17:51:51 [INFO ]  	world_rank: 0
+2021-09-19 17:51:51 [INFO ]  	world_size: 1
+2021-09-19 17:51:51 [INFO ]  	
+2021-09-19 17:51:51 [WARNING]  ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/opt.yaml already exists, moved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/old_opts/opt_2021_09_19__17_34_39.yaml
+2021-09-19 17:51:51 [INFO ]  train dataset size:	60000
+2021-09-19 17:51:51 [INFO ]  test dataset size: 	10000
+2021-09-19 17:51:51 [INFO ]  datasets built!
+2021-09-19 17:51:51 [INFO ]  mode: distill_basic, phase: train
+2021-09-19 17:51:51 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-19 17:51:55 [ERROR]  Fatal error: 
+2021-09-19 17:51:55 [ERROR]  Traceback (most recent call last):
+2021-09-19 17:51:55 [ERROR]    File "main.py", line 402, in <module>
+2021-09-19 17:51:55 [ERROR]      main(options.get_state())
+2021-09-19 17:51:55 [ERROR]    File "main.py", line 108, in main
+2021-09-19 17:51:55 [ERROR]      state.models = load_train_models()
+2021-09-19 17:51:55 [ERROR]    File "main.py", line 88, in load_train_models
+2021-09-19 17:51:55 [ERROR]      model, = networks.get_networks(state, N=1)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/dataset-distillation/networks/__init__.py", line 18, in get_networks
+2021-09-19 17:51:55 [ERROR]      net = cls(state)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 99, in __call__
+2021-09-19 17:51:55 [ERROR]      net = net.to(state.device)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 852, in to
+2021-09-19 17:51:55 [ERROR]      return self._apply(convert)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/dataset-distillation/networks/utils.py", line 125, in _apply
+2021-09-19 17:51:55 [ERROR]      rv = super(ReparamModule, self)._apply(*args, **kwargs)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 530, in _apply
+2021-09-19 17:51:55 [ERROR]      module._apply(fn)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 552, in _apply
+2021-09-19 17:51:55 [ERROR]      param_applied = fn(param)
+2021-09-19 17:51:55 [ERROR]    File "/home/rithik/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 850, in convert
+2021-09-19 17:51:55 [ERROR]      return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+2021-09-19 17:51:55 [ERROR]  RuntimeError: CUDA error: out of memory
+2021-09-19 17:51:55 [ERROR]  CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+2021-09-19 17:51:55 [ERROR]  For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
