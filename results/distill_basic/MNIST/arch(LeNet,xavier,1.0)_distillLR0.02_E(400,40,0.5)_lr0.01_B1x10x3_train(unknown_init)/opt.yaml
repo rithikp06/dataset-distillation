@@ -1,7 +1,7 @@
 arch: LeNet
 attack_class: 0
 base_seed: 1
-batch_size: 1024
+batch_size: 10
 checkpoint_interval: 10
 dataset: MNIST
 dataset_labels:
