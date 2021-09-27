@@ -1438,3 +1438,533 @@
 2021-09-27 12:15:44 [INFO ]  Epoch:  200 [      0/  60000 ( 0%)]	Loss: 0.6733	Data Time: 0.31s	Train Time: 0.13s
 2021-09-27 12:15:57 [INFO ]  Epoch:  201 [      0/  60000 ( 0%)]	Loss: 0.7362	Data Time: 0.25s	Train Time: 0.15s
 2021-09-27 12:16:09 [INFO ]  Epoch:  202 [      0/  60000 ( 0%)]	Loss: 1.6597	Data Time: 0.28s	Train Time: 0.29s
+2021-09-27 13:09:23 [INFO ]  ======================================== 2021-09-27 13:09:23 ========================================
+2021-09-27 13:09:23 [INFO ]  Base directory is ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)
+2021-09-27 13:09:23 [INFO ]  Options: 
+2021-09-27 13:09:23 [INFO ]  	arch: LeNet
+2021-09-27 13:09:23 [INFO ]  	attack_class: 0
+2021-09-27 13:09:23 [INFO ]  	base_seed: 1
+2021-09-27 13:09:23 [INFO ]  	batch_size: 512
+2021-09-27 13:09:23 [INFO ]  	checkpoint_interval: 10
+2021-09-27 13:09:23 [INFO ]  	dataset: MNIST
+2021-09-27 13:09:23 [INFO ]  	dataset_labels:
+2021-09-27 13:09:23 [INFO ]  	- 0
+2021-09-27 13:09:23 [INFO ]  	- 1
+2021-09-27 13:09:23 [INFO ]  	- 2
+2021-09-27 13:09:23 [INFO ]  	- 3
+2021-09-27 13:09:23 [INFO ]  	- 4
+2021-09-27 13:09:23 [INFO ]  	- 5
+2021-09-27 13:09:23 [INFO ]  	- 6
+2021-09-27 13:09:23 [INFO ]  	- 7
+2021-09-27 13:09:23 [INFO ]  	- 8
+2021-09-27 13:09:23 [INFO ]  	- 9
+2021-09-27 13:09:23 [INFO ]  	dataset_normalization: !!python/tuple
+2021-09-27 13:09:23 [INFO ]  	- !!python/tuple
+2021-09-27 13:09:23 [INFO ]  	    - 0.1307
+2021-09-27 13:09:23 [INFO ]  	- !!python/tuple
+2021-09-27 13:09:23 [INFO ]  	    - 0.3081
+2021-09-27 13:09:23 [INFO ]  	dataset_root: ./data/mnist
+2021-09-27 13:09:23 [INFO ]  	decay_epochs: 40
+2021-09-27 13:09:23 [INFO ]  	decay_factor: 0.5
+2021-09-27 13:09:23 [INFO ]  	device_id: 0
+2021-09-27 13:09:23 [INFO ]  	distill_epochs: 3
+2021-09-27 13:09:23 [INFO ]  	distill_lr: 0.02
+2021-09-27 13:09:23 [INFO ]  	distill_steps: 10
+2021-09-27 13:09:23 [INFO ]  	distilled_images_per_class_per_step: 1
+2021-09-27 13:09:23 [INFO ]  	distributed: false
+2021-09-27 13:09:23 [INFO ]  	dropout: false
+2021-09-27 13:09:23 [INFO ]  	epochs: 400
+2021-09-27 13:09:23 [INFO ]  	expr_name_format: null
+2021-09-27 13:09:23 [INFO ]  	image_dpi: 80
+2021-09-27 13:09:23 [INFO ]  	init: xavier
+2021-09-27 13:09:23 [INFO ]  	init_param: 1.0
+2021-09-27 13:09:23 [INFO ]  	input_size: 28
+2021-09-27 13:09:23 [INFO ]  	log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+2021-09-27 13:09:23 [INFO ]  	log_interval: 100
+2021-09-27 13:09:23 [INFO ]  	log_level: INFO
+2021-09-27 13:09:23 [INFO ]  	lr: 0.01
+2021-09-27 13:09:23 [INFO ]  	mode: distill_basic
+2021-09-27 13:09:23 [INFO ]  	model_dir: ./models/
+2021-09-27 13:09:23 [INFO ]  	model_subdir_format: null
+2021-09-27 13:09:23 [INFO ]  	n_nets: 1
+2021-09-27 13:09:23 [INFO ]  	nc: 1
+2021-09-27 13:09:23 [INFO ]  	no_log: false
+2021-09-27 13:09:23 [INFO ]  	num_classes: 10
+2021-09-27 13:09:23 [INFO ]  	num_workers: 8
+2021-09-27 13:09:23 [INFO ]  	phase: train
+2021-09-27 13:09:23 [INFO ]  	results_dir: ./results/
+2021-09-27 13:09:23 [INFO ]  	sample_n_nets: 1
+2021-09-27 13:09:23 [INFO ]  	source_dataset: null
+2021-09-27 13:09:23 [INFO ]  	start_time: '2021-09-27 13:09:23'
+2021-09-27 13:09:23 [INFO ]  	target_class: 1
+2021-09-27 13:09:23 [INFO ]  	test_batch_size: 1024
+2021-09-27 13:09:23 [INFO ]  	test_distill_epochs: null
+2021-09-27 13:09:23 [INFO ]  	test_distilled_images: loaded
+2021-09-27 13:09:23 [INFO ]  	test_distilled_lrs:
+2021-09-27 13:09:23 [INFO ]  	- loaded
+2021-09-27 13:09:23 [INFO ]  	test_n_nets: 1
+2021-09-27 13:09:23 [INFO ]  	test_n_runs: 1
+2021-09-27 13:09:23 [INFO ]  	test_name_format: null
+2021-09-27 13:09:23 [INFO ]  	test_nets_type: unknown_init
+2021-09-27 13:09:23 [INFO ]  	test_niter: 1
+2021-09-27 13:09:23 [INFO ]  	test_optimize_n_nets: 20
+2021-09-27 13:09:23 [INFO ]  	test_optimize_n_runs: null
+2021-09-27 13:09:23 [INFO ]  	train_nets_type: unknown_init
+2021-09-27 13:09:23 [INFO ]  	world_rank: 0
+2021-09-27 13:09:23 [INFO ]  	world_size: 1
+2021-09-27 13:09:23 [INFO ]  	
+2021-09-27 13:09:23 [WARNING]  ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/opt.yaml already exists, moved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/old_opts/opt_2021_09_27__11_34_15.yaml
+2021-09-27 13:09:23 [INFO ]  train dataset size:	60000
+2021-09-27 13:09:23 [INFO ]  test dataset size: 	10000
+2021-09-27 13:09:23 [INFO ]  datasets built!
+2021-09-27 13:09:23 [INFO ]  mode: distill_basic, phase: train
+2021-09-27 13:09:23 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-27 13:09:26 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-27 13:09:26 [INFO ]  Train 10 steps iterated for 3 epochs
+2021-09-27 13:09:26 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0000/results.pth
+2021-09-27 13:09:26 [INFO ]  
+2021-09-27 13:09:26 [INFO ]  Begin of epoch 0 :
+2021-09-27 13:09:27 [INFO ]  
+2021-09-27 13:09:27 [INFO ]  Epoch:    0 [      0/  60000 ( 0%)]	Loss: 2.3476	Data Time: 0.47s	Train Time: 0.20s
+2021-09-27 13:09:43 [INFO ]  Epoch:    0 [  51200/  60000 (85%)]	Loss: 1.6013	Data Time: 0.00s	Train Time: 0.17s
+2021-09-27 13:09:46 [INFO ]  Epoch:    1 [      0/  60000 ( 0%)]	Loss: 1.2449	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:09:59 [INFO ]  ======================================== 2021-09-27 13:09:59 ========================================
+2021-09-27 13:09:59 [INFO ]  Base directory is ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)
+2021-09-27 13:09:59 [INFO ]  Options: 
+2021-09-27 13:09:59 [INFO ]  	arch: LeNet
+2021-09-27 13:09:59 [INFO ]  	attack_class: 0
+2021-09-27 13:09:59 [INFO ]  	base_seed: 1
+2021-09-27 13:09:59 [INFO ]  	batch_size: 512
+2021-09-27 13:09:59 [INFO ]  	checkpoint_interval: 10
+2021-09-27 13:09:59 [INFO ]  	dataset: MNIST
+2021-09-27 13:09:59 [INFO ]  	dataset_labels:
+2021-09-27 13:09:59 [INFO ]  	- 0
+2021-09-27 13:09:59 [INFO ]  	- 1
+2021-09-27 13:09:59 [INFO ]  	- 2
+2021-09-27 13:09:59 [INFO ]  	- 3
+2021-09-27 13:09:59 [INFO ]  	- 4
+2021-09-27 13:09:59 [INFO ]  	- 5
+2021-09-27 13:09:59 [INFO ]  	- 6
+2021-09-27 13:09:59 [INFO ]  	- 7
+2021-09-27 13:09:59 [INFO ]  	- 8
+2021-09-27 13:09:59 [INFO ]  	- 9
+2021-09-27 13:09:59 [INFO ]  	dataset_normalization: !!python/tuple
+2021-09-27 13:09:59 [INFO ]  	- !!python/tuple
+2021-09-27 13:09:59 [INFO ]  	    - 0.1307
+2021-09-27 13:09:59 [INFO ]  	- !!python/tuple
+2021-09-27 13:09:59 [INFO ]  	    - 0.3081
+2021-09-27 13:09:59 [INFO ]  	dataset_root: ./data/mnist
+2021-09-27 13:09:59 [INFO ]  	decay_epochs: 40
+2021-09-27 13:09:59 [INFO ]  	decay_factor: 0.5
+2021-09-27 13:09:59 [INFO ]  	device_id: 0
+2021-09-27 13:09:59 [INFO ]  	distill_epochs: 3
+2021-09-27 13:09:59 [INFO ]  	distill_lr: 0.02
+2021-09-27 13:09:59 [INFO ]  	distill_steps: 10
+2021-09-27 13:09:59 [INFO ]  	distilled_images_per_class_per_step: 1
+2021-09-27 13:09:59 [INFO ]  	distributed: false
+2021-09-27 13:09:59 [INFO ]  	dropout: false
+2021-09-27 13:09:59 [INFO ]  	epochs: 400
+2021-09-27 13:09:59 [INFO ]  	expr_name_format: null
+2021-09-27 13:09:59 [INFO ]  	image_dpi: 80
+2021-09-27 13:09:59 [INFO ]  	init: xavier
+2021-09-27 13:09:59 [INFO ]  	init_param: 1.0
+2021-09-27 13:09:59 [INFO ]  	input_size: 28
+2021-09-27 13:09:59 [INFO ]  	log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+2021-09-27 13:09:59 [INFO ]  	log_interval: 100
+2021-09-27 13:09:59 [INFO ]  	log_level: INFO
+2021-09-27 13:09:59 [INFO ]  	lr: 0.01
+2021-09-27 13:09:59 [INFO ]  	mode: distill_basic
+2021-09-27 13:09:59 [INFO ]  	model_dir: ./models/
+2021-09-27 13:09:59 [INFO ]  	model_subdir_format: null
+2021-09-27 13:09:59 [INFO ]  	n_nets: 1
+2021-09-27 13:09:59 [INFO ]  	nc: 1
+2021-09-27 13:09:59 [INFO ]  	no_log: false
+2021-09-27 13:09:59 [INFO ]  	num_classes: 10
+2021-09-27 13:09:59 [INFO ]  	num_workers: 8
+2021-09-27 13:09:59 [INFO ]  	phase: train
+2021-09-27 13:09:59 [INFO ]  	results_dir: ./results/
+2021-09-27 13:09:59 [INFO ]  	sample_n_nets: 1
+2021-09-27 13:09:59 [INFO ]  	source_dataset: null
+2021-09-27 13:09:59 [INFO ]  	start_time: '2021-09-27 13:09:59'
+2021-09-27 13:09:59 [INFO ]  	target_class: 1
+2021-09-27 13:09:59 [INFO ]  	test_batch_size: 1024
+2021-09-27 13:09:59 [INFO ]  	test_distill_epochs: null
+2021-09-27 13:09:59 [INFO ]  	test_distilled_images: loaded
+2021-09-27 13:09:59 [INFO ]  	test_distilled_lrs:
+2021-09-27 13:09:59 [INFO ]  	- loaded
+2021-09-27 13:09:59 [INFO ]  	test_n_nets: 1
+2021-09-27 13:09:59 [INFO ]  	test_n_runs: 1
+2021-09-27 13:09:59 [INFO ]  	test_name_format: null
+2021-09-27 13:09:59 [INFO ]  	test_nets_type: unknown_init
+2021-09-27 13:09:59 [INFO ]  	test_niter: 1
+2021-09-27 13:09:59 [INFO ]  	test_optimize_n_nets: 20
+2021-09-27 13:09:59 [INFO ]  	test_optimize_n_runs: null
+2021-09-27 13:09:59 [INFO ]  	train_nets_type: unknown_init
+2021-09-27 13:09:59 [INFO ]  	world_rank: 0
+2021-09-27 13:09:59 [INFO ]  	world_size: 1
+2021-09-27 13:09:59 [INFO ]  	
+2021-09-27 13:09:59 [WARNING]  ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/opt.yaml already exists, moved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/old_opts/opt_2021_09_27__13_09_23.yaml
+2021-09-27 13:09:59 [INFO ]  train dataset size:	60000
+2021-09-27 13:09:59 [INFO ]  test dataset size: 	10000
+2021-09-27 13:09:59 [INFO ]  datasets built!
+2021-09-27 13:09:59 [INFO ]  mode: distill_basic, phase: train
+2021-09-27 13:09:59 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-27 13:10:02 [INFO ]  Build 1 LeNet network(s) with [xavier(1.0)] init
+2021-09-27 13:10:02 [INFO ]  Train 10 steps iterated for 3 epochs
+2021-09-27 13:10:02 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0000/results.pth
+2021-09-27 13:10:02 [INFO ]  
+2021-09-27 13:10:02 [INFO ]  Begin of epoch 0 :
+2021-09-27 13:10:03 [INFO ]  
+2021-09-27 13:10:03 [INFO ]  Epoch:    0 [      0/  60000 ( 0%)]	Loss: 2.3476	Data Time: 0.49s	Train Time: 0.19s
+2021-09-27 13:10:18 [INFO ]  Epoch:    0 [  51200/  60000 (85%)]	Loss: 1.7248	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:10:21 [INFO ]  Epoch:    1 [      0/  60000 ( 0%)]	Loss: 1.3162	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:10:36 [INFO ]  Epoch:    1 [  51200/  60000 (85%)]	Loss: 0.9955	Data Time: 0.00s	Train Time: 0.13s
+2021-09-27 13:10:39 [INFO ]  Epoch:    2 [      0/  60000 ( 0%)]	Loss: 0.8437	Data Time: 0.08s	Train Time: 0.13s
+2021-09-27 13:10:53 [INFO ]  Epoch:    2 [  51200/  60000 (85%)]	Loss: 0.7779	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:10:56 [INFO ]  Epoch:    3 [      0/  60000 ( 0%)]	Loss: 1.1052	Data Time: 0.07s	Train Time: 0.13s
+2021-09-27 13:11:11 [INFO ]  Epoch:    3 [  51200/  60000 (85%)]	Loss: 0.8703	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:11:14 [INFO ]  Epoch:    4 [      0/  60000 ( 0%)]	Loss: 0.9497	Data Time: 0.07s	Train Time: 0.16s
+2021-09-27 13:11:29 [INFO ]  Epoch:    4 [  51200/  60000 (85%)]	Loss: 0.9159	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:11:32 [INFO ]  Epoch:    5 [      0/  60000 ( 0%)]	Loss: 0.9411	Data Time: 0.07s	Train Time: 0.10s
+2021-09-27 13:11:47 [INFO ]  Epoch:    5 [  51200/  60000 (85%)]	Loss: 0.7017	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:11:50 [INFO ]  Epoch:    6 [      0/  60000 ( 0%)]	Loss: 0.7371	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:12:04 [INFO ]  Epoch:    6 [  51200/  60000 (85%)]	Loss: 0.9913	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:12:07 [INFO ]  Epoch:    7 [      0/  60000 ( 0%)]	Loss: 0.8505	Data Time: 0.06s	Train Time: 0.10s
+2021-09-27 13:12:22 [INFO ]  Epoch:    7 [  51200/  60000 (85%)]	Loss: 0.7373	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:12:25 [INFO ]  Epoch:    8 [      0/  60000 ( 0%)]	Loss: 0.8704	Data Time: 0.07s	Train Time: 0.10s
+2021-09-27 13:12:40 [INFO ]  Epoch:    8 [  51200/  60000 (85%)]	Loss: 0.8221	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:12:42 [INFO ]  Epoch:    9 [      0/  60000 ( 0%)]	Loss: 0.6959	Data Time: 0.07s	Train Time: 0.09s
+2021-09-27 13:12:57 [INFO ]  Epoch:    9 [  51200/  60000 (85%)]	Loss: 0.7423	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:13:00 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0010/results.pth
+2021-09-27 13:13:00 [INFO ]  
+2021-09-27 13:13:00 [INFO ]  Begin of epoch 10 :
+2021-09-27 13:13:01 [INFO ]  
+2021-09-27 13:13:01 [INFO ]  Epoch:   10 [      0/  60000 ( 0%)]	Loss: 0.7801	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:13:16 [INFO ]  Epoch:   10 [  51200/  60000 (85%)]	Loss: 1.0016	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:13:19 [INFO ]  Epoch:   11 [      0/  60000 ( 0%)]	Loss: 0.8084	Data Time: 0.07s	Train Time: 0.13s
+2021-09-27 13:13:34 [INFO ]  Epoch:   11 [  51200/  60000 (85%)]	Loss: 0.7362	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:13:37 [INFO ]  Epoch:   12 [      0/  60000 ( 0%)]	Loss: 1.0241	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:13:51 [INFO ]  Epoch:   12 [  51200/  60000 (85%)]	Loss: 0.6620	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:13:54 [INFO ]  Epoch:   13 [      0/  60000 ( 0%)]	Loss: 0.7304	Data Time: 0.07s	Train Time: 0.16s
+2021-09-27 13:14:09 [INFO ]  Epoch:   13 [  51200/  60000 (85%)]	Loss: 0.6448	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:14:12 [INFO ]  Epoch:   14 [      0/  60000 ( 0%)]	Loss: 0.7591	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:14:27 [INFO ]  Epoch:   14 [  51200/  60000 (85%)]	Loss: 0.9581	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:14:30 [INFO ]  Epoch:   15 [      0/  60000 ( 0%)]	Loss: 0.9862	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:14:45 [INFO ]  Epoch:   15 [  51200/  60000 (85%)]	Loss: 0.9732	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:14:48 [INFO ]  Epoch:   16 [      0/  60000 ( 0%)]	Loss: 0.6114	Data Time: 0.07s	Train Time: 0.16s
+2021-09-27 13:15:03 [INFO ]  Epoch:   16 [  51200/  60000 (85%)]	Loss: 0.7886	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:15:06 [INFO ]  Epoch:   17 [      0/  60000 ( 0%)]	Loss: 0.9849	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:15:20 [INFO ]  Epoch:   17 [  51200/  60000 (85%)]	Loss: 0.8186	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:15:23 [INFO ]  Epoch:   18 [      0/  60000 ( 0%)]	Loss: 0.9747	Data Time: 0.10s	Train Time: 0.14s
+2021-09-27 13:15:38 [INFO ]  Epoch:   18 [  51200/  60000 (85%)]	Loss: 0.6654	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:15:41 [INFO ]  Epoch:   19 [      0/  60000 ( 0%)]	Loss: 0.8485	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:15:56 [INFO ]  Epoch:   19 [  51200/  60000 (85%)]	Loss: 1.0316	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:15:59 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0020/results.pth
+2021-09-27 13:15:59 [INFO ]  
+2021-09-27 13:15:59 [INFO ]  Begin of epoch 20 :
+2021-09-27 13:15:59 [INFO ]  
+2021-09-27 13:15:59 [INFO ]  Epoch:   20 [      0/  60000 ( 0%)]	Loss: 0.6202	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:16:14 [INFO ]  Epoch:   20 [  51200/  60000 (85%)]	Loss: 0.7219	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:16:17 [INFO ]  Epoch:   21 [      0/  60000 ( 0%)]	Loss: 0.7493	Data Time: 0.08s	Train Time: 0.12s
+2021-09-27 13:16:32 [INFO ]  Epoch:   21 [  51200/  60000 (85%)]	Loss: 0.8721	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:16:35 [INFO ]  Epoch:   22 [      0/  60000 ( 0%)]	Loss: 0.8537	Data Time: 0.10s	Train Time: 0.17s
+2021-09-27 13:16:49 [INFO ]  Epoch:   22 [  51200/  60000 (85%)]	Loss: 1.6840	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:16:52 [INFO ]  Epoch:   23 [      0/  60000 ( 0%)]	Loss: 0.9586	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:17:07 [INFO ]  Epoch:   23 [  51200/  60000 (85%)]	Loss: 1.2119	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:17:10 [INFO ]  Epoch:   24 [      0/  60000 ( 0%)]	Loss: 1.2487	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:17:25 [INFO ]  Epoch:   24 [  51200/  60000 (85%)]	Loss: 0.8725	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:17:28 [INFO ]  Epoch:   25 [      0/  60000 ( 0%)]	Loss: 0.7446	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:17:43 [INFO ]  Epoch:   25 [  51200/  60000 (85%)]	Loss: 1.2874	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:17:45 [INFO ]  Epoch:   26 [      0/  60000 ( 0%)]	Loss: 1.1134	Data Time: 0.06s	Train Time: 0.10s
+2021-09-27 13:18:00 [INFO ]  Epoch:   26 [  51200/  60000 (85%)]	Loss: 0.9218	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:18:03 [INFO ]  Epoch:   27 [      0/  60000 ( 0%)]	Loss: 1.0231	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:18:18 [INFO ]  Epoch:   27 [  51200/  60000 (85%)]	Loss: 0.7494	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:18:20 [INFO ]  Epoch:   28 [      0/  60000 ( 0%)]	Loss: 0.8326	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:18:35 [INFO ]  Epoch:   28 [  51200/  60000 (85%)]	Loss: 0.6600	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:18:38 [INFO ]  Epoch:   29 [      0/  60000 ( 0%)]	Loss: 0.7898	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:18:53 [INFO ]  Epoch:   29 [  51200/  60000 (85%)]	Loss: 0.7096	Data Time: 0.00s	Train Time: 0.13s
+2021-09-27 13:18:56 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0030/results.pth
+2021-09-27 13:18:56 [INFO ]  
+2021-09-27 13:18:56 [INFO ]  Begin of epoch 30 :
+2021-09-27 13:18:56 [INFO ]  
+2021-09-27 13:18:56 [INFO ]  Epoch:   30 [      0/  60000 ( 0%)]	Loss: 0.9217	Data Time: 0.07s	Train Time: 0.10s
+2021-09-27 13:19:11 [INFO ]  Epoch:   30 [  51200/  60000 (85%)]	Loss: 1.8252	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:19:14 [INFO ]  Epoch:   31 [      0/  60000 ( 0%)]	Loss: 1.0545	Data Time: 0.07s	Train Time: 0.11s
+2021-09-27 13:19:29 [INFO ]  Epoch:   31 [  51200/  60000 (85%)]	Loss: 1.0078	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:19:32 [INFO ]  Epoch:   32 [      0/  60000 ( 0%)]	Loss: 1.9843	Data Time: 0.11s	Train Time: 0.15s
+2021-09-27 13:19:47 [INFO ]  Epoch:   32 [  51200/  60000 (85%)]	Loss: 0.7954	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:19:49 [INFO ]  Epoch:   33 [      0/  60000 ( 0%)]	Loss: 1.0142	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:20:04 [INFO ]  Epoch:   33 [  51200/  60000 (85%)]	Loss: 1.1586	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:20:07 [INFO ]  Epoch:   34 [      0/  60000 ( 0%)]	Loss: 0.7953	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:20:22 [INFO ]  Epoch:   34 [  51200/  60000 (85%)]	Loss: 0.9262	Data Time: 0.00s	Train Time: 0.10s
+2021-09-27 13:20:24 [INFO ]  Epoch:   35 [      0/  60000 ( 0%)]	Loss: 0.8029	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:20:39 [INFO ]  Epoch:   35 [  51200/  60000 (85%)]	Loss: 0.8117	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:20:42 [INFO ]  Epoch:   36 [      0/  60000 ( 0%)]	Loss: 1.0272	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:20:57 [INFO ]  Epoch:   36 [  51200/  60000 (85%)]	Loss: 1.0220	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:21:00 [INFO ]  Epoch:   37 [      0/  60000 ( 0%)]	Loss: 0.9133	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:21:15 [INFO ]  Epoch:   37 [  51200/  60000 (85%)]	Loss: 0.7485	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:21:18 [INFO ]  Epoch:   38 [      0/  60000 ( 0%)]	Loss: 0.8657	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:21:32 [INFO ]  Epoch:   38 [  51200/  60000 (85%)]	Loss: 0.7575	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:21:35 [INFO ]  Epoch:   39 [      0/  60000 ( 0%)]	Loss: 1.0750	Data Time: 0.07s	Train Time: 0.10s
+2021-09-27 13:21:50 [INFO ]  Epoch:   39 [  51200/  60000 (85%)]	Loss: 0.8687	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:21:53 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0040/results.pth
+2021-09-27 13:21:53 [INFO ]  
+2021-09-27 13:21:53 [INFO ]  Begin of epoch 40 :
+2021-09-27 13:21:53 [INFO ]  
+2021-09-27 13:21:54 [INFO ]  Epoch:   40 [      0/  60000 ( 0%)]	Loss: 0.8108	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:22:08 [INFO ]  Epoch:   40 [  51200/  60000 (85%)]	Loss: 1.3062	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:22:11 [INFO ]  Epoch:   41 [      0/  60000 ( 0%)]	Loss: 0.9991	Data Time: 0.07s	Train Time: 0.13s
+2021-09-27 13:22:26 [INFO ]  Epoch:   41 [  51200/  60000 (85%)]	Loss: 2.2864	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:22:29 [INFO ]  Epoch:   42 [      0/  60000 ( 0%)]	Loss: 1.0724	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:22:43 [INFO ]  Epoch:   42 [  51200/  60000 (85%)]	Loss: 0.8837	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:22:46 [INFO ]  Epoch:   43 [      0/  60000 ( 0%)]	Loss: 0.7629	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:23:01 [INFO ]  Epoch:   43 [  51200/  60000 (85%)]	Loss: 1.2269	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:23:04 [INFO ]  Epoch:   44 [      0/  60000 ( 0%)]	Loss: 0.9721	Data Time: 0.11s	Train Time: 0.16s
+2021-09-27 13:23:19 [INFO ]  Epoch:   44 [  51200/  60000 (85%)]	Loss: 1.3554	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:23:22 [INFO ]  Epoch:   45 [      0/  60000 ( 0%)]	Loss: 0.8924	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:23:37 [INFO ]  Epoch:   45 [  51200/  60000 (85%)]	Loss: 1.0242	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:23:40 [INFO ]  Epoch:   46 [      0/  60000 ( 0%)]	Loss: 0.9776	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:23:54 [INFO ]  Epoch:   46 [  51200/  60000 (85%)]	Loss: 1.3049	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:23:57 [INFO ]  Epoch:   47 [      0/  60000 ( 0%)]	Loss: 0.8293	Data Time: 0.06s	Train Time: 0.15s
+2021-09-27 13:24:12 [INFO ]  Epoch:   47 [  51200/  60000 (85%)]	Loss: 0.7571	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:24:15 [INFO ]  Epoch:   48 [      0/  60000 ( 0%)]	Loss: 0.8055	Data Time: 0.06s	Train Time: 0.14s
+2021-09-27 13:24:29 [INFO ]  Epoch:   48 [  51200/  60000 (85%)]	Loss: 2.2878	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:24:32 [INFO ]  Epoch:   49 [      0/  60000 ( 0%)]	Loss: 0.8913	Data Time: 0.09s	Train Time: 0.10s
+2021-09-27 13:24:47 [INFO ]  Epoch:   49 [  51200/  60000 (85%)]	Loss: 1.0642	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:24:49 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0050/results.pth
+2021-09-27 13:24:49 [INFO ]  
+2021-09-27 13:24:49 [INFO ]  Begin of epoch 50 :
+2021-09-27 13:24:50 [INFO ]  
+2021-09-27 13:24:50 [INFO ]  Epoch:   50 [      0/  60000 ( 0%)]	Loss: 0.9756	Data Time: 0.11s	Train Time: 0.12s
+2021-09-27 13:25:05 [INFO ]  Epoch:   50 [  51200/  60000 (85%)]	Loss: 0.8549	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:25:08 [INFO ]  Epoch:   51 [      0/  60000 ( 0%)]	Loss: 0.7817	Data Time: 0.07s	Train Time: 0.11s
+2021-09-27 13:25:23 [INFO ]  Epoch:   51 [  51200/  60000 (85%)]	Loss: 1.1100	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:25:26 [INFO ]  Epoch:   52 [      0/  60000 ( 0%)]	Loss: 1.0951	Data Time: 0.10s	Train Time: 0.14s
+2021-09-27 13:25:40 [INFO ]  Epoch:   52 [  51200/  60000 (85%)]	Loss: 0.7850	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:25:43 [INFO ]  Epoch:   53 [      0/  60000 ( 0%)]	Loss: 0.7824	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:25:58 [INFO ]  Epoch:   53 [  51200/  60000 (85%)]	Loss: 0.8268	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:26:01 [INFO ]  Epoch:   54 [      0/  60000 ( 0%)]	Loss: 0.6955	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:26:15 [INFO ]  Epoch:   54 [  51200/  60000 (85%)]	Loss: 0.7890	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:26:18 [INFO ]  Epoch:   55 [      0/  60000 ( 0%)]	Loss: 0.7047	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:26:33 [INFO ]  Epoch:   55 [  51200/  60000 (85%)]	Loss: 0.8609	Data Time: 0.00s	Train Time: 0.12s
+2021-09-27 13:26:36 [INFO ]  Epoch:   56 [      0/  60000 ( 0%)]	Loss: 1.1478	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:26:50 [INFO ]  Epoch:   56 [  51200/  60000 (85%)]	Loss: 1.8932	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:26:53 [INFO ]  Epoch:   57 [      0/  60000 ( 0%)]	Loss: 0.9218	Data Time: 0.11s	Train Time: 0.15s
+2021-09-27 13:27:08 [INFO ]  Epoch:   57 [  51200/  60000 (85%)]	Loss: 0.6557	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:27:11 [INFO ]  Epoch:   58 [      0/  60000 ( 0%)]	Loss: 0.7747	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:27:26 [INFO ]  Epoch:   58 [  51200/  60000 (85%)]	Loss: 0.9928	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:27:29 [INFO ]  Epoch:   59 [      0/  60000 ( 0%)]	Loss: 0.7862	Data Time: 0.08s	Train Time: 0.12s
+2021-09-27 13:27:43 [INFO ]  Epoch:   59 [  51200/  60000 (85%)]	Loss: 1.0169	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:27:46 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0060/results.pth
+2021-09-27 13:27:46 [INFO ]  
+2021-09-27 13:27:46 [INFO ]  Begin of epoch 60 :
+2021-09-27 13:27:47 [INFO ]  
+2021-09-27 13:27:47 [INFO ]  Epoch:   60 [      0/  60000 ( 0%)]	Loss: 0.8904	Data Time: 0.11s	Train Time: 0.14s
+2021-09-27 13:28:02 [INFO ]  Epoch:   60 [  51200/  60000 (85%)]	Loss: 1.1951	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:28:05 [INFO ]  Epoch:   61 [      0/  60000 ( 0%)]	Loss: 0.7525	Data Time: 0.08s	Train Time: 0.13s
+2021-09-27 13:28:19 [INFO ]  Epoch:   61 [  51200/  60000 (85%)]	Loss: 0.7160	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:28:22 [INFO ]  Epoch:   62 [      0/  60000 ( 0%)]	Loss: 0.7123	Data Time: 0.09s	Train Time: 0.15s
+2021-09-27 13:28:37 [INFO ]  Epoch:   62 [  51200/  60000 (85%)]	Loss: 0.7227	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:28:40 [INFO ]  Epoch:   63 [      0/  60000 ( 0%)]	Loss: 0.6631	Data Time: 0.07s	Train Time: 0.09s
+2021-09-27 13:28:55 [INFO ]  Epoch:   63 [  51200/  60000 (85%)]	Loss: 0.7852	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:28:58 [INFO ]  Epoch:   64 [      0/  60000 ( 0%)]	Loss: 1.1443	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:29:12 [INFO ]  Epoch:   64 [  51200/  60000 (85%)]	Loss: 1.0068	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:29:15 [INFO ]  Epoch:   65 [      0/  60000 ( 0%)]	Loss: 0.7620	Data Time: 0.07s	Train Time: 0.11s
+2021-09-27 13:29:30 [INFO ]  Epoch:   65 [  51200/  60000 (85%)]	Loss: 0.9994	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:29:33 [INFO ]  Epoch:   66 [      0/  60000 ( 0%)]	Loss: 1.0105	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:29:48 [INFO ]  Epoch:   66 [  51200/  60000 (85%)]	Loss: 0.8360	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:29:51 [INFO ]  Epoch:   67 [      0/  60000 ( 0%)]	Loss: 0.6861	Data Time: 0.10s	Train Time: 0.13s
+2021-09-27 13:30:05 [INFO ]  Epoch:   67 [  51200/  60000 (85%)]	Loss: 0.9851	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:30:08 [INFO ]  Epoch:   68 [      0/  60000 ( 0%)]	Loss: 0.9691	Data Time: 0.07s	Train Time: 0.11s
+2021-09-27 13:30:23 [INFO ]  Epoch:   68 [  51200/  60000 (85%)]	Loss: 0.7213	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:30:26 [INFO ]  Epoch:   69 [      0/  60000 ( 0%)]	Loss: 0.7004	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:30:41 [INFO ]  Epoch:   69 [  51200/  60000 (85%)]	Loss: 0.9071	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:30:44 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0070/results.pth
+2021-09-27 13:30:44 [INFO ]  
+2021-09-27 13:30:44 [INFO ]  Begin of epoch 70 :
+2021-09-27 13:30:44 [INFO ]  
+2021-09-27 13:30:44 [INFO ]  Epoch:   70 [      0/  60000 ( 0%)]	Loss: 0.7095	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:30:59 [INFO ]  Epoch:   70 [  51200/  60000 (85%)]	Loss: 0.9591	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:31:02 [INFO ]  Epoch:   71 [      0/  60000 ( 0%)]	Loss: 0.9677	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:31:17 [INFO ]  Epoch:   71 [  51200/  60000 (85%)]	Loss: 0.7595	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:31:20 [INFO ]  Epoch:   72 [      0/  60000 ( 0%)]	Loss: 0.9462	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:31:34 [INFO ]  Epoch:   72 [  51200/  60000 (85%)]	Loss: 1.2795	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:31:37 [INFO ]  Epoch:   73 [      0/  60000 ( 0%)]	Loss: 0.8328	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:31:52 [INFO ]  Epoch:   73 [  51200/  60000 (85%)]	Loss: 1.0306	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:31:55 [INFO ]  Epoch:   74 [      0/  60000 ( 0%)]	Loss: 0.7279	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:32:09 [INFO ]  Epoch:   74 [  51200/  60000 (85%)]	Loss: 0.7042	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:32:12 [INFO ]  Epoch:   75 [      0/  60000 ( 0%)]	Loss: 2.0704	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:32:27 [INFO ]  Epoch:   75 [  51200/  60000 (85%)]	Loss: 0.7124	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:32:30 [INFO ]  Epoch:   76 [      0/  60000 ( 0%)]	Loss: 1.0797	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:32:45 [INFO ]  Epoch:   76 [  51200/  60000 (85%)]	Loss: 0.8210	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:32:47 [INFO ]  Epoch:   77 [      0/  60000 ( 0%)]	Loss: 2.2667	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:33:02 [INFO ]  Epoch:   77 [  51200/  60000 (85%)]	Loss: 0.8269	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:33:05 [INFO ]  Epoch:   78 [      0/  60000 ( 0%)]	Loss: 0.8391	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:33:19 [INFO ]  Epoch:   78 [  51200/  60000 (85%)]	Loss: 2.1854	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:33:22 [INFO ]  Epoch:   79 [      0/  60000 ( 0%)]	Loss: 0.8689	Data Time: 0.11s	Train Time: 0.16s
+2021-09-27 13:33:37 [INFO ]  Epoch:   79 [  51200/  60000 (85%)]	Loss: 2.1903	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:33:40 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0080/results.pth
+2021-09-27 13:33:40 [INFO ]  
+2021-09-27 13:33:40 [INFO ]  Begin of epoch 80 :
+2021-09-27 13:33:41 [INFO ]  
+2021-09-27 13:33:41 [INFO ]  Epoch:   80 [      0/  60000 ( 0%)]	Loss: 0.7477	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:33:56 [INFO ]  Epoch:   80 [  51200/  60000 (85%)]	Loss: 0.8114	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:33:58 [INFO ]  Epoch:   81 [      0/  60000 ( 0%)]	Loss: 0.8028	Data Time: 0.09s	Train Time: 0.12s
+2021-09-27 13:34:13 [INFO ]  Epoch:   81 [  51200/  60000 (85%)]	Loss: 0.8111	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:34:16 [INFO ]  Epoch:   82 [      0/  60000 ( 0%)]	Loss: 0.8348	Data Time: 0.09s	Train Time: 0.15s
+2021-09-27 13:34:31 [INFO ]  Epoch:   82 [  51200/  60000 (85%)]	Loss: 0.8608	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:34:34 [INFO ]  Epoch:   83 [      0/  60000 ( 0%)]	Loss: 0.6503	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:34:49 [INFO ]  Epoch:   83 [  51200/  60000 (85%)]	Loss: 0.8340	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:34:52 [INFO ]  Epoch:   84 [      0/  60000 ( 0%)]	Loss: 0.6188	Data Time: 0.11s	Train Time: 0.16s
+2021-09-27 13:35:06 [INFO ]  Epoch:   84 [  51200/  60000 (85%)]	Loss: 0.9121	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:35:09 [INFO ]  Epoch:   85 [      0/  60000 ( 0%)]	Loss: 0.8336	Data Time: 0.07s	Train Time: 0.09s
+2021-09-27 13:35:24 [INFO ]  Epoch:   85 [  51200/  60000 (85%)]	Loss: 0.7022	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:35:27 [INFO ]  Epoch:   86 [      0/  60000 ( 0%)]	Loss: 0.6172	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:35:41 [INFO ]  Epoch:   86 [  51200/  60000 (85%)]	Loss: 1.1748	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:35:44 [INFO ]  Epoch:   87 [      0/  60000 ( 0%)]	Loss: 0.6746	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:35:59 [INFO ]  Epoch:   87 [  51200/  60000 (85%)]	Loss: 0.7357	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:36:02 [INFO ]  Epoch:   88 [      0/  60000 ( 0%)]	Loss: 0.9873	Data Time: 0.10s	Train Time: 0.11s
+2021-09-27 13:36:16 [INFO ]  Epoch:   88 [  51200/  60000 (85%)]	Loss: 0.9160	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:36:19 [INFO ]  Epoch:   89 [      0/  60000 ( 0%)]	Loss: 1.1459	Data Time: 0.09s	Train Time: 0.14s
+2021-09-27 13:36:34 [INFO ]  Epoch:   89 [  51200/  60000 (85%)]	Loss: 1.3951	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:36:37 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0090/results.pth
+2021-09-27 13:36:37 [INFO ]  
+2021-09-27 13:36:37 [INFO ]  Begin of epoch 90 :
+2021-09-27 13:36:37 [INFO ]  
+2021-09-27 13:36:38 [INFO ]  Epoch:   90 [      0/  60000 ( 0%)]	Loss: 2.1439	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:36:53 [INFO ]  Epoch:   90 [  51200/  60000 (85%)]	Loss: 0.9690	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:36:56 [INFO ]  Epoch:   91 [      0/  60000 ( 0%)]	Loss: 0.8308	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:37:10 [INFO ]  Epoch:   91 [  51200/  60000 (85%)]	Loss: 0.7314	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:37:13 [INFO ]  Epoch:   92 [      0/  60000 ( 0%)]	Loss: 0.8121	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:37:28 [INFO ]  Epoch:   92 [  51200/  60000 (85%)]	Loss: 0.7291	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:37:31 [INFO ]  Epoch:   93 [      0/  60000 ( 0%)]	Loss: 0.6748	Data Time: 0.07s	Train Time: 0.11s
+2021-09-27 13:37:45 [INFO ]  Epoch:   93 [  51200/  60000 (85%)]	Loss: 0.8888	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:37:48 [INFO ]  Epoch:   94 [      0/  60000 ( 0%)]	Loss: 1.0392	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:38:03 [INFO ]  Epoch:   94 [  51200/  60000 (85%)]	Loss: 0.9669	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:38:06 [INFO ]  Epoch:   95 [      0/  60000 ( 0%)]	Loss: 1.5315	Data Time: 0.10s	Train Time: 0.15s
+2021-09-27 13:38:21 [INFO ]  Epoch:   95 [  51200/  60000 (85%)]	Loss: 0.7329	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:38:24 [INFO ]  Epoch:   96 [      0/  60000 ( 0%)]	Loss: 0.7796	Data Time: 0.06s	Train Time: 0.09s
+2021-09-27 13:38:39 [INFO ]  Epoch:   96 [  51200/  60000 (85%)]	Loss: 0.9025	Data Time: 0.00s	Train Time: 0.13s
+2021-09-27 13:38:42 [INFO ]  Epoch:   97 [      0/  60000 ( 0%)]	Loss: 0.8729	Data Time: 0.09s	Train Time: 0.15s
+2021-09-27 13:38:56 [INFO ]  Epoch:   97 [  51200/  60000 (85%)]	Loss: 0.8489	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:38:59 [INFO ]  Epoch:   98 [      0/  60000 ( 0%)]	Loss: 0.9361	Data Time: 0.10s	Train Time: 0.14s
+2021-09-27 13:39:14 [INFO ]  Epoch:   98 [  51200/  60000 (85%)]	Loss: 1.1069	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:39:17 [INFO ]  Epoch:   99 [      0/  60000 ( 0%)]	Loss: 0.6622	Data Time: 0.06s	Train Time: 0.10s
+2021-09-27 13:39:31 [INFO ]  Epoch:   99 [  51200/  60000 (85%)]	Loss: 0.7861	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:39:34 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0100/results.pth
+2021-09-27 13:39:34 [INFO ]  
+2021-09-27 13:39:34 [INFO ]  Begin of epoch 100 :
+2021-09-27 13:39:35 [INFO ]  
+2021-09-27 13:39:35 [INFO ]  Epoch:  100 [      0/  60000 ( 0%)]	Loss: 0.8978	Data Time: 0.06s	Train Time: 0.16s
+2021-09-27 13:39:50 [INFO ]  Epoch:  100 [  51200/  60000 (85%)]	Loss: 0.8159	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:39:53 [INFO ]  Epoch:  101 [      0/  60000 ( 0%)]	Loss: 0.7292	Data Time: 0.07s	Train Time: 0.13s
+2021-09-27 13:40:07 [INFO ]  Epoch:  101 [  51200/  60000 (85%)]	Loss: 0.9285	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:40:10 [INFO ]  Epoch:  102 [      0/  60000 ( 0%)]	Loss: 0.9001	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:40:25 [INFO ]  Epoch:  102 [  51200/  60000 (85%)]	Loss: 0.8278	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:40:28 [INFO ]  Epoch:  103 [      0/  60000 ( 0%)]	Loss: 1.0547	Data Time: 0.11s	Train Time: 0.16s
+2021-09-27 13:40:43 [INFO ]  Epoch:  103 [  51200/  60000 (85%)]	Loss: 1.8726	Data Time: 0.00s	Train Time: 0.09s
+2021-09-27 13:40:45 [INFO ]  Epoch:  104 [      0/  60000 ( 0%)]	Loss: 0.9330	Data Time: 0.10s	Train Time: 0.14s
+2021-09-27 13:41:00 [INFO ]  Epoch:  104 [  51200/  60000 (85%)]	Loss: 0.6835	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:41:03 [INFO ]  Epoch:  105 [      0/  60000 ( 0%)]	Loss: 0.7182	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:41:18 [INFO ]  Epoch:  105 [  51200/  60000 (85%)]	Loss: 0.7082	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:41:20 [INFO ]  Epoch:  106 [      0/  60000 ( 0%)]	Loss: 0.8649	Data Time: 0.09s	Train Time: 0.09s
+2021-09-27 13:41:35 [INFO ]  Epoch:  106 [  51200/  60000 (85%)]	Loss: 0.7517	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:41:38 [INFO ]  Epoch:  107 [      0/  60000 ( 0%)]	Loss: 0.9925	Data Time: 0.07s	Train Time: 0.17s
+2021-09-27 13:41:52 [INFO ]  Epoch:  107 [  51200/  60000 (85%)]	Loss: 0.7108	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:41:55 [INFO ]  Epoch:  108 [      0/  60000 ( 0%)]	Loss: 0.9849	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:42:10 [INFO ]  Epoch:  108 [  51200/  60000 (85%)]	Loss: 0.7662	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:42:13 [INFO ]  Epoch:  109 [      0/  60000 ( 0%)]	Loss: 0.8669	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:42:28 [INFO ]  Epoch:  109 [  51200/  60000 (85%)]	Loss: 0.7869	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:42:30 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0110/results.pth
+2021-09-27 13:42:30 [INFO ]  
+2021-09-27 13:42:30 [INFO ]  Begin of epoch 110 :
+2021-09-27 13:42:31 [INFO ]  
+2021-09-27 13:42:31 [INFO ]  Epoch:  110 [      0/  60000 ( 0%)]	Loss: 0.8545	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:42:46 [INFO ]  Epoch:  110 [  51200/  60000 (85%)]	Loss: 2.3053	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:42:49 [INFO ]  Epoch:  111 [      0/  60000 ( 0%)]	Loss: 0.7678	Data Time: 0.07s	Train Time: 0.16s
+2021-09-27 13:43:04 [INFO ]  Epoch:  111 [  51200/  60000 (85%)]	Loss: 0.7862	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:43:07 [INFO ]  Epoch:  112 [      0/  60000 ( 0%)]	Loss: 0.6589	Data Time: 0.09s	Train Time: 0.13s
+2021-09-27 13:43:21 [INFO ]  Epoch:  112 [  51200/  60000 (85%)]	Loss: 0.7929	Data Time: 0.00s	Train Time: 0.12s
+2021-09-27 13:43:24 [INFO ]  Epoch:  113 [      0/  60000 ( 0%)]	Loss: 0.7035	Data Time: 0.08s	Train Time: 0.17s
+2021-09-27 13:43:39 [INFO ]  Epoch:  113 [  51200/  60000 (85%)]	Loss: 0.8227	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:43:42 [INFO ]  Epoch:  114 [      0/  60000 ( 0%)]	Loss: 0.6953	Data Time: 0.06s	Train Time: 0.12s
+2021-09-27 13:43:57 [INFO ]  Epoch:  114 [  51200/  60000 (85%)]	Loss: 0.8612	Data Time: 0.00s	Train Time: 0.17s
+2021-09-27 13:44:00 [INFO ]  Epoch:  115 [      0/  60000 ( 0%)]	Loss: 1.4752	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:44:14 [INFO ]  Epoch:  115 [  51200/  60000 (85%)]	Loss: 0.8929	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:44:17 [INFO ]  Epoch:  116 [      0/  60000 ( 0%)]	Loss: 0.8017	Data Time: 0.07s	Train Time: 0.10s
+2021-09-27 13:44:32 [INFO ]  Epoch:  116 [  51200/  60000 (85%)]	Loss: 0.7113	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:44:35 [INFO ]  Epoch:  117 [      0/  60000 ( 0%)]	Loss: 0.8142	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:44:49 [INFO ]  Epoch:  117 [  51200/  60000 (85%)]	Loss: 0.9077	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:44:52 [INFO ]  Epoch:  118 [      0/  60000 ( 0%)]	Loss: 1.0110	Data Time: 0.07s	Train Time: 0.18s
+2021-09-27 13:45:07 [INFO ]  Epoch:  118 [  51200/  60000 (85%)]	Loss: 0.7742	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:45:10 [INFO ]  Epoch:  119 [      0/  60000 ( 0%)]	Loss: 1.1614	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:45:25 [INFO ]  Epoch:  119 [  51200/  60000 (85%)]	Loss: 0.9375	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:45:28 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0120/results.pth
+2021-09-27 13:45:28 [INFO ]  
+2021-09-27 13:45:28 [INFO ]  Begin of epoch 120 :
+2021-09-27 13:45:28 [INFO ]  
+2021-09-27 13:45:28 [INFO ]  Epoch:  120 [      0/  60000 ( 0%)]	Loss: 0.8254	Data Time: 0.10s	Train Time: 0.11s
+2021-09-27 13:45:43 [INFO ]  Epoch:  120 [  51200/  60000 (85%)]	Loss: 0.7597	Data Time: 0.00s	Train Time: 0.13s
+2021-09-27 13:45:46 [INFO ]  Epoch:  121 [      0/  60000 ( 0%)]	Loss: 0.7929	Data Time: 0.07s	Train Time: 0.13s
+2021-09-27 13:46:01 [INFO ]  Epoch:  121 [  51200/  60000 (85%)]	Loss: 0.7350	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:46:04 [INFO ]  Epoch:  122 [      0/  60000 ( 0%)]	Loss: 0.6674	Data Time: 0.07s	Train Time: 0.12s
+2021-09-27 13:46:18 [INFO ]  Epoch:  122 [  51200/  60000 (85%)]	Loss: 0.7036	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:46:21 [INFO ]  Epoch:  123 [      0/  60000 ( 0%)]	Loss: 1.0160	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:46:36 [INFO ]  Epoch:  123 [  51200/  60000 (85%)]	Loss: 0.7847	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:46:39 [INFO ]  Epoch:  124 [      0/  60000 ( 0%)]	Loss: 0.7145	Data Time: 0.11s	Train Time: 0.14s
+2021-09-27 13:46:54 [INFO ]  Epoch:  124 [  51200/  60000 (85%)]	Loss: 0.7710	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:46:57 [INFO ]  Epoch:  125 [      0/  60000 ( 0%)]	Loss: 0.7615	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:47:11 [INFO ]  Epoch:  125 [  51200/  60000 (85%)]	Loss: 0.7492	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:47:14 [INFO ]  Epoch:  126 [      0/  60000 ( 0%)]	Loss: 0.7845	Data Time: 0.07s	Train Time: 0.15s
+2021-09-27 13:47:29 [INFO ]  Epoch:  126 [  51200/  60000 (85%)]	Loss: 0.9028	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:47:32 [INFO ]  Epoch:  127 [      0/  60000 ( 0%)]	Loss: 0.7836	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:47:46 [INFO ]  Epoch:  127 [  51200/  60000 (85%)]	Loss: 0.6934	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:47:49 [INFO ]  Epoch:  128 [      0/  60000 ( 0%)]	Loss: 0.7279	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:48:04 [INFO ]  Epoch:  128 [  51200/  60000 (85%)]	Loss: 0.8531	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:48:07 [INFO ]  Epoch:  129 [      0/  60000 ( 0%)]	Loss: 0.8771	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:48:22 [INFO ]  Epoch:  129 [  51200/  60000 (85%)]	Loss: 0.9591	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:48:25 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0130/results.pth
+2021-09-27 13:48:25 [INFO ]  
+2021-09-27 13:48:25 [INFO ]  Begin of epoch 130 :
+2021-09-27 13:48:25 [INFO ]  
+2021-09-27 13:48:25 [INFO ]  Epoch:  130 [      0/  60000 ( 0%)]	Loss: 0.7372	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:48:40 [INFO ]  Epoch:  130 [  51200/  60000 (85%)]	Loss: 0.7230	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:48:43 [INFO ]  Epoch:  131 [      0/  60000 ( 0%)]	Loss: 0.7517	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:48:57 [INFO ]  Epoch:  131 [  51200/  60000 (85%)]	Loss: 1.1232	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:49:00 [INFO ]  Epoch:  132 [      0/  60000 ( 0%)]	Loss: 0.8969	Data Time: 0.09s	Train Time: 0.16s
+2021-09-27 13:49:15 [INFO ]  Epoch:  132 [  51200/  60000 (85%)]	Loss: 0.9112	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:49:18 [INFO ]  Epoch:  133 [      0/  60000 ( 0%)]	Loss: 0.7577	Data Time: 0.08s	Train Time: 0.13s
+2021-09-27 13:49:33 [INFO ]  Epoch:  133 [  51200/  60000 (85%)]	Loss: 0.8167	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:49:36 [INFO ]  Epoch:  134 [      0/  60000 ( 0%)]	Loss: 1.0075	Data Time: 0.08s	Train Time: 0.15s
+2021-09-27 13:49:50 [INFO ]  Epoch:  134 [  51200/  60000 (85%)]	Loss: 0.8794	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:49:53 [INFO ]  Epoch:  135 [      0/  60000 ( 0%)]	Loss: 0.8125	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:50:08 [INFO ]  Epoch:  135 [  51200/  60000 (85%)]	Loss: 0.6420	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:50:11 [INFO ]  Epoch:  136 [      0/  60000 ( 0%)]	Loss: 0.8344	Data Time: 0.07s	Train Time: 0.16s
+2021-09-27 13:50:26 [INFO ]  Epoch:  136 [  51200/  60000 (85%)]	Loss: 0.8285	Data Time: 0.00s	Train Time: 0.15s
+2021-09-27 13:50:29 [INFO ]  Epoch:  137 [      0/  60000 ( 0%)]	Loss: 0.8382	Data Time: 0.07s	Train Time: 0.14s
+2021-09-27 13:50:43 [INFO ]  Epoch:  137 [  51200/  60000 (85%)]	Loss: 1.5339	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:50:46 [INFO ]  Epoch:  138 [      0/  60000 ( 0%)]	Loss: 0.8194	Data Time: 0.08s	Train Time: 0.14s
+2021-09-27 13:51:01 [INFO ]  Epoch:  138 [  51200/  60000 (85%)]	Loss: 0.6614	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:51:04 [INFO ]  Epoch:  139 [      0/  60000 ( 0%)]	Loss: 1.0448	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:51:19 [INFO ]  Epoch:  139 [  51200/  60000 (85%)]	Loss: 0.7750	Data Time: 0.00s	Train Time: 0.14s
+2021-09-27 13:51:21 [INFO ]  Results saved to ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(400,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/checkpoints/epoch0140/results.pth
+2021-09-27 13:51:21 [INFO ]  
+2021-09-27 13:51:21 [INFO ]  Begin of epoch 140 :
+2021-09-27 13:51:22 [INFO ]  
+2021-09-27 13:51:22 [INFO ]  Epoch:  140 [      0/  60000 ( 0%)]	Loss: 0.7459	Data Time: 0.08s	Train Time: 0.12s
+2021-09-27 13:51:37 [INFO ]  Epoch:  140 [  51200/  60000 (85%)]	Loss: 0.6924	Data Time: 0.00s	Train Time: 0.13s
+2021-09-27 13:51:40 [INFO ]  Epoch:  141 [      0/  60000 ( 0%)]	Loss: 0.8754	Data Time: 0.08s	Train Time: 0.16s
+2021-09-27 13:51:54 [INFO ]  Epoch:  141 [  51200/  60000 (85%)]	Loss: 0.8120	Data Time: 0.00s	Train Time: 0.16s
+2021-09-27 13:51:57 [INFO ]  Epoch:  142 [      0/  60000 ( 0%)]	Loss: 0.6670	Data Time: 0.10s	Train Time: 0.16s
+2021-09-27 13:52:12 [INFO ]  Epoch:  142 [  51200/  60000 (85%)]	Loss: nan	Data Time: 0.00s	Train Time: 0.12s
+2021-09-27 13:52:12 [ERROR]  Fatal error: 
+2021-09-27 13:52:12 [ERROR]  Traceback (most recent call last):
+2021-09-27 13:52:12 [ERROR]    File "main.py", line 402, in <module>
+2021-09-27 13:52:12 [ERROR]      main(options.get_state())
+2021-09-27 13:52:12 [ERROR]    File "main.py", line 131, in main
+2021-09-27 13:52:12 [ERROR]      steps = train_distilled_image.distill(state, state.models)
+2021-09-27 13:52:12 [ERROR]    File "/home/rithik/distil-forked/dataset-distillation/train_distilled_image.py", line 290, in distill
+2021-09-27 13:52:12 [ERROR]      return Trainer(state, models).train()
+2021-09-27 13:52:12 [ERROR]    File "/home/rithik/distil-forked/dataset-distillation/train_distilled_image.py", line 277, in train
+2021-09-27 13:52:12 [ERROR]      raise RuntimeError('loss became NaN')
+2021-09-27 13:52:12 [ERROR]  RuntimeError: loss became NaN
