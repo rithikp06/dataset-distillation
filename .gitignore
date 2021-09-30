@@ -12,8 +12,8 @@ __pycache__
 
 data
 data/
-models
-models/
+
+
 
 # IPython notebook checkpoints
 .ipynb_checkpoints
