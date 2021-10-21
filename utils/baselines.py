@@ -4,6 +4,7 @@ import numpy as np
 
 
 def get_baseline_label_for_one_step(state):
+    print("\n\n\nget_baseline_label_for_one_step\n\n\n")
     label = torch.tensor(list(range(state.num_classes)), device=state.device)
     if state.mode == 'distill_attack':
         label[state.attack_class] = state.target_class

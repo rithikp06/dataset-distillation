@@ -14,6 +14,7 @@ from utils.distributed import all_gather_coalesced
 
 # train models
 def load_train_models(state):
+    print("\n\n\nload_train_models\n\n\n")
     if state.train_nets_type == 'unknown_init':
         model, = networks.get_networks(state, N=1)
         return [model for _ in range(state.local_n_nets)]
@@ -35,6 +36,7 @@ def load_train_models(state):
 
 
 def task_loss(state, output, label, **kwargs):
+    print("\n\n\ntask_loss\n\n\n")
     if state.num_classes == 2:
         label = label.to(output, non_blocking=True).view_as(output)
         return F.binary_cross_entropy_with_logits(output, label, **kwargs)
@@ -43,6 +45,7 @@ def task_loss(state, output, label, **kwargs):
 
 
 def final_objective_loss(state, output, label):
+    print("\n\n\nfinal_objective_loss\n\n\n")
     if state.mode in {'distill_basic', 'distill_adapt'}:
         return task_loss(state, output, label)
     elif state.mode == 'distill_attack':
@@ -55,6 +58,7 @@ def final_objective_loss(state, output, label):
 
 # NB: This trains params or model inplace!!!
 def train_steps_inplace(state, models, steps, params=None, callback=None):
+    print("\n\n\ntrain_steps_in_place\n\n\n")
     if isinstance(models, torch.nn.Module):
         models = [models]
     if params is None:
@@ -100,6 +104,7 @@ def train_steps_inplace(state, models, steps, params=None, callback=None):
 
 # See NOTE [ Evaluation Result Format ] for output format
 def evaluate_models(state, models, param_list=None, test_all=False, test_loader_iter=None):
+    print("\n\n\nevaluate_models\n\n\n")
     n_models = len(models)
     device = state.device
     num_classes = state.num_classes
@@ -169,6 +174,7 @@ def fixed_width_fmt(num, width=4, align='>'):
 
 
 def _desc_step(state, steps, i):
+    print("\n\n\n_desc_step\n\n\n")
     if i == 0:
         return 'before steps'
     else:
@@ -221,6 +227,7 @@ def infinite_iterator(iterable):
 
 # See NOTE [ Evaluation Result Format ] for output format
 def evaluate_steps(state, steps, prefix, details='', test_all=False, test_at_steps=None, log_results=True):
+    print("\n\n\nevaluate_steps\n\n\n")
     models = state.test_models
     n_steps = len(steps)
 

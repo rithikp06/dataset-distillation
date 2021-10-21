@@ -27,6 +27,7 @@ class Trainer(object):
         self.init_data_optim()
 
     def init_data_optim(self):
+        print("\n\n\ninit_data_optim\n\n\n")
         self.params = []
         state = self.state
         optim_lr = state.lr
@@ -70,6 +71,7 @@ class Trainer(object):
             p.grad = torch.zeros_like(p)
 
     def get_steps(self):
+        print("\n\n\nget_steps\n\n\n")
         data_label_iterable = (x for _ in range(self.state.distill_epochs) for x in zip(self.data, self.labels))
         lrs = F.softplus(self.raw_distill_lrs).unbind()
 
@@ -80,6 +82,7 @@ class Trainer(object):
         return steps
 
     def forward(self, model, rdata, rlabel, steps):
+        print("\n\n\nforward\n\n\n")
         state = self.state
 
         # forward
@@ -107,6 +110,7 @@ class Trainer(object):
         return ll, (ll, params, gws)
 
     def backward(self, model, rdata, rlabel, steps, saved_for_backward):
+        print("\n\n\nbackward\n\n\n")
         l, params, gws = saved_for_backward
         state = self.state
 
@@ -167,6 +171,7 @@ class Trainer(object):
         return datas, gdatas, lrs, glrs
 
     def accumulate_grad(self, grad_infos):
+        print("\n\n\naccumulate_grad\n\n\n")
         bwd_out = []
         bwd_grad = []
         for datas, gdatas, lrs, glrs in grad_infos:
@@ -178,6 +183,7 @@ class Trainer(object):
             torch.autograd.backward(bwd_out, bwd_grad)
 
     def save_results(self, steps=None, visualize=True, subfolder=''):
+        print("\n\n\nsave_results\n\n\n")
         with torch.no_grad():
             steps = steps or self.get_steps()
             save_results(self.state, steps, visualize=visualize, subfolder=subfolder)
@@ -186,6 +192,7 @@ class Trainer(object):
         return self.train()
 
     def prefetch_train_loader_iter(self):
+        print("\n\n\nprefetch_train_loader_iter\n\n\n")
         state = self.state
         device = state.device
         train_iter = iter(state.train_loader)
@@ -199,6 +206,7 @@ class Trainer(object):
                 yield epoch, it, val
 
     def train(self):
+        print("\n\n\ntrain(self)\n\n\n")
         state = self.state
         device = state.device
         train_loader = state.train_loader
@@ -287,4 +295,5 @@ class Trainer(object):
 
 
 def distill(state, models):
+    print("\n\n\ndistill(state, models)\n\n\n")
     return Trainer(state, models).train()
