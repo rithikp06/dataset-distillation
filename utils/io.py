@@ -17,6 +17,8 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
                     vis_dir=None, vis_name_fmt='visuals_step{step:03d}',
                     cmap=None, supertitle=True, subtitle=True, fontsize=None,
                     reuse_axes=True):
+    
+    tensor_name_fmt = 'tensor_step{step:03d}_{num:01d}.pt'
     if vis_dir is None:
         logging.warning('Not saving because vis_dir is not given')
     else:
@@ -29,7 +31,6 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
     nrows = max(2, distilled_images_per_class_per_step)
     grid = (nrows, np.ceil(N / float(nrows)).astype(int))
     plt.rcParams["figure.figsize"] = (grid[1] * 1.5 + 1, nrows * 1.5 + 1)
-
     plt.close('all')
     fig, axes = plt.subplots(nrows=grid[0], ncols=grid[1])
     axes = axes.flatten()
@@ -59,6 +60,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
                 axis.axis('off')
                 if subtitle:
                     axis.set_title('Label {}'.format(label_names[label]), fontsize=fontsize)
+            torch.save(img, os.path.join(vis_dir, tensor_name_fmt.format(step=i, num=label_names[label])))
         if supertitle:
             if lr is not None:
                 lr = lr.sum().item()
