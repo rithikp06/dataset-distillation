@@ -19,6 +19,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
                     reuse_axes=True):
     
     tensor_name_fmt = 'tensor_step{step:03d}_{num:01d}.pt'
+    all_tensor_name_fmt = 'tensor_step{step:03d}_all.pt'
     if vis_dir is None:
         logging.warning('Not saving because vis_dir is not given')
     else:
@@ -47,8 +48,11 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
 
     plt_images = []
     first_run = True
+    temp_idx = 0
+    all_tensor = []
     for i, (data, labels, lr) in enumerate(np_steps):
         for n, (img, label, axis) in enumerate(zip(data, labels, axes)):
+            
             if nc == 1:
                 img = img[..., 0]
             img = (img * std + mean).clip(0, 1)
@@ -61,6 +65,12 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
                 if subtitle:
                     axis.set_title('Label {}'.format(label_names[label]), fontsize=fontsize)
             torch.save(img, os.path.join(vis_dir, tensor_name_fmt.format(step=i, num=label_names[label])))
+            if temp_idx == 0:
+                all_tensor = img.reshape([1,28,28])
+            else:
+                temp_tensor = img.reshape([1,28,28])
+                all_tensor = torch.cat((all_tensor, temp_tensor))
+            
         if supertitle:
             if lr is not None:
                 lr = lr.sum().item()
@@ -76,6 +86,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
             fig, axes = plt.subplots(nrows=grid[0], ncols=grid[1])
             axes = axes.flatten()
             plt.show()
+        torch.save(all_tensor, os.path.join(vis_dir, all_tensor_name_fmt.format(step=i)))
 
 
 def vis_results(state, steps, *args, immediate=False, **kwargs):
