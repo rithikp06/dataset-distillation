@@ -69,7 +69,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
                 all_tensor = img.reshape([1,28,28])
             else:
                 temp_tensor = img.reshape([1,28,28])
-                all_tensor = torch.cat((all_tensor, temp_tensor))
+                all_tensor = torch.cat((torch.tensor(all_tensor), torch.tensor(temp_tensor)))
             temp_idx += 1
             
         if supertitle:
@@ -87,7 +87,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
             fig, axes = plt.subplots(nrows=grid[0], ncols=grid[1])
             axes = axes.flatten()
             plt.show()
-        torch.save(torch.cat((all_tensor, temp_tensor)), os.path.join(vis_dir, all_tensor_name_fmt.format(step=i)))
+        torch.save(all_tensor, os.path.join(vis_dir, all_tensor_name_fmt.format(step=i)))
 
 
 def vis_results(state, steps, *args, immediate=False, **kwargs):
