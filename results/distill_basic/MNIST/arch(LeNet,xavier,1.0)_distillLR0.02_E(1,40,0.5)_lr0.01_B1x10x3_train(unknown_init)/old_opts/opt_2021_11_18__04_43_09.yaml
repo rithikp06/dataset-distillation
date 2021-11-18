@@ -52,7 +52,7 @@ phase: train
 results_dir: ./results/
 sample_n_nets: 1
 source_dataset: null
-start_time: '2021-11-18 04:47:02'
+start_time: '2021-11-18 04:43:09'
 target_class: 1
 test_batch_size: 1024
 test_distill_epochs: null
