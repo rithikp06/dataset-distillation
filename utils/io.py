@@ -70,6 +70,7 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
             else:
                 temp_tensor = img.reshape([1,28,28])
                 all_tensor = torch.cat((all_tensor, temp_tensor))
+            temp_idx += 1
             
         if supertitle:
             if lr is not None:
