@@ -1,6 +1,6 @@
 arch: LeNet
 attack_class: 0
-base_seed: 1
+base_seed: 400
 batch_size: 1024
 checkpoint_interval: 10
 dataset: MNIST
@@ -52,7 +52,7 @@ phase: train
 results_dir: ./results/
 sample_n_nets: 1
 source_dataset: null
-start_time: '2021-11-08 13:57:00'
+start_time: '2021-11-18 04:59:31'
 target_class: 1
 test_batch_size: 1024
 test_distill_epochs: null
