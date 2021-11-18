@@ -1,6 +1,6 @@
 arch: LeNet
 attack_class: 0
-base_seed: 400
+base_seed: 100
 batch_size: 1024
 checkpoint_interval: 10
 dataset: MNIST
@@ -27,7 +27,7 @@ device_id: 0
 distill_epochs: 3
 distill_lr: 0.02
 distill_steps: 10
-distilled_images_per_class_per_step: 1
+distilled_images_per_class_per_step: 5
 distributed: false
 dropout: false
 epochs: 100
@@ -36,7 +36,7 @@ image_dpi: 80
 init: xavier
 init_param: 1.0
 input_size: 28
-log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(100,40,0.5)_lr0.01_B1x10x3_train(unknown_init)/output.log
+log_file: ./results/distill_basic/MNIST/arch(LeNet,xavier,1.0)_distillLR0.02_E(100,40,0.5)_lr0.01_B5x10x3_train(unknown_init)/output.log
 log_interval: 100
 log_level: INFO
 lr: 0.01
@@ -52,7 +52,7 @@ phase: train
 results_dir: ./results/
 sample_n_nets: 1
 source_dataset: null
-start_time: '2021-11-18 13:13:40'
+start_time: '2021-11-18 13:00:23'
 target_class: 1
 test_batch_size: 1024
 test_distill_epochs: null
