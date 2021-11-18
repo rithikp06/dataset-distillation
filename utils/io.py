@@ -48,9 +48,10 @@ def _vis_results_fn(np_steps, distilled_images_per_class_per_step, dataset_info,
 
     plt_images = []
     first_run = True
-    temp_idx = 0
-    all_tensor = []
+    
     for i, (data, labels, lr) in enumerate(np_steps):
+        temp_idx = 0
+        all_tensor = []
         for n, (img, label, axis) in enumerate(zip(data, labels, axes)):
             
             if nc == 1:
